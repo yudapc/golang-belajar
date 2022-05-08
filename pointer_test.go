@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func ContohPengguaanPointer() {
+func TestPointer(t *testing.T) {
 	person1 := Person{Name: "Joko"}
 	person2 := &person1
 

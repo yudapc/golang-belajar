@@ -1,7 +1,15 @@
 package main
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestInterfaceKosong(t *testing.T) {
-	PenggunaanInterfaceKosong()
+	var person interface{}
+	person = "Joko"
+	person = 10
+	person = true
+	person = "Budi"
+	fmt.Println("Interface Kosong: ", person)
 }
